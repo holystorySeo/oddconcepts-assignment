@@ -20,11 +20,19 @@ export default function SearchResultPage() {
             .map((data, idx) => {
               return (
                 <div className="post-box" key={`post-idx${idx}`}>
-                  <div className="post-image">
+                  <div
+                    role="presentation"
+                    className="post-image"
+                    onClick={() => window.open(`${data.image_url}`, '_blank')}
+                  >
                     <img src={data.image_url} alt="없음" />
                   </div>
                   <div className="post-name">{data.name}</div>
-                  <div className="post-price">{data.price}</div>
+                  <div className="post-price">
+                    {Number(data.price)
+                      .toString()
+                      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+                  </div>
                 </div>
               );
             })}
