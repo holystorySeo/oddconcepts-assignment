@@ -1,0 +1,1614 @@
+[
+  {
+    "product_code": 1,
+    "region_id": 2910,
+    "image_url": "https://static.pxl.ai/problem/images/VT-070.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "basic_or_minimal_or_normcore"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "knit_or_angora"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 2,
+    "region_id": 2100,
+    "image_url": "https://static.pxl.ai/problem/images/OP-019.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "sexy"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "summer"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "casual"
+      },
+      {
+        "pattern": "plain"
+      }
+    ],
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 3,
+    "region_id": 3901,
+    "image_url": "https://static.pxl.ai/problem/images/JK-093.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "trendy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "date"
+      },
+      {
+        "fabric": "polyester"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "check"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 4,
+    "region_id": 1380,
+    "image_url": "https://static.pxl.ai/problem/images/JK-087.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "elegant_or_luxury"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "knit_or_angora"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 5,
+    "region_id": 4910,
+    "image_url": "https://static.pxl.ai/problem/images/VT-064.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "unknown"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "ethnic"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 6,
+    "region_id": 4989,
+    "image_url": "https://static.pxl.ai/problem/images/OP-025.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "preppy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "chiffon_or_silk"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 7,
+    "region_id": 2590,
+    "image_url": "https://static.pxl.ai/problem/images/PT-217.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "elegant_or_luxury"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "festival"
+      },
+      {
+        "fabric": "chiffon_or_silk"
+      },
+      {
+        "sense": "unknown"
+      },
+      {
+        "pattern": "ethnic"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 8,
+    "region_id": 4725,
+    "image_url": "https://static.pxl.ai/problem/images/VT-058.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "classic"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "festival"
+      },
+      {
+        "fabric": "suede_or_velvet"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "check"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 9,
+    "region_id": 3808,
+    "image_url": "https://static.pxl.ai/problem/images/OP-031.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "bohemian_or_ethnic_or_hippie"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "school"
+      },
+      {
+        "fabric": "tweed"
+      },
+      {
+        "sense": "formal"
+      },
+      {
+        "pattern": "flower"
+      }
+    ],
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 10,
+    "region_id": 1862,
+    "image_url": "https://static.pxl.ai/problem/images/PT-203.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "classic"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "formal"
+      },
+      {
+        "fabric": "polyester"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "unknown"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 11,
+    "region_id": 1089,
+    "image_url": "https://static.pxl.ai/problem/images/CT-088.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "casual_or_comfy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "suede/velvet"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 12,
+    "region_id": 4840,
+    "image_url": "https://static.pxl.ai/problem/images/CT-063.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "chic_or_modern_or_urban_or_sophisticated"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "fur"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "geometry"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 13,
+    "region_id": 1323,
+    "image_url": "https://static.pxl.ai/problem/images/JP-239.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "preppy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "denim"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "plain"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 14,
+    "region_id": 2601,
+    "image_url": "https://static.pxl.ai/problem/images/JK-050.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "casual_or_comfy"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "night_out"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "print"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 15,
+    "region_id": 1555,
+    "image_url": "https://static.pxl.ai/problem/images/KN-115.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "chic_or_modern_or_urban_or_sophisticated"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "night_out"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 16,
+    "region_id": 2063,
+    "image_url": "https://static.pxl.ai/problem/images/KN-101.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "basic_or_minimal_or_normcore"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "formal"
+      },
+      {
+        "fabric": "polyester"
+      },
+      {
+        "sense": "formal"
+      },
+      {
+        "pattern": "check"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 17,
+    "region_id": 3112,
+    "image_url": "https://static.pxl.ai/problem/images/JK-044.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "elegant_or_luxury"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "denim"
+      },
+      {
+        "sense": "unknown"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 18,
+    "region_id": 1772,
+    "image_url": "https://static.pxl.ai/problem/images/CT-077.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "feminine_or_romantic"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "sequin/spangle"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "geometry"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 19,
+    "region_id": 3875,
+    "image_url": "https://static.pxl.ai/problem/images/JP-205.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "manish_or_tomboy"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "formal"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "sexy"
+      },
+      {
+        "pattern": "plain"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 20,
+    "region_id": 2851,
+    "image_url": "https://static.pxl.ai/problem/images/KN-129.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "bohemian_or_ethnic_or_hippie"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "night_out"
+      },
+      {
+        "fabric": "fur"
+      },
+      {
+        "sense": "chic"
+      },
+      {
+        "pattern": "dot"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 21,
+    "region_id": 3716,
+    "image_url": "https://static.pxl.ai/problem/images/JK-078.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "casual_or_comfy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "date"
+      },
+      {
+        "fabric": "fur"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "print"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 22,
+    "region_id": 4162,
+    "image_url": "https://static.pxl.ai/problem/images/JP-211.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "manish_or_tomboy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "date"
+      },
+      {
+        "fabric": "unsupported"
+      },
+      {
+        "sense": "sexy"
+      },
+      {
+        "pattern": "camouflage"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 23,
+    "region_id": 3093,
+    "image_url": "https://static.pxl.ai/problem/images/PT-029.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "basic_or_minimal_or_normcore"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "chiffon_or_silk"
+      },
+      {
+        "sense": "formal"
+      },
+      {
+        "pattern": "ethnic"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 24,
+    "region_id": 3875,
+    "image_url": "https://static.pxl.ai/problem/images/JK-291.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "basic_or_minimal_or_normcore"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "school"
+      },
+      {
+        "fabric": "cotton"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 25,
+    "region_id": 4245,
+    "image_url": "https://static.pxl.ai/problem/images/SH-079.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "cute"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "date"
+      },
+      {
+        "fabric": "unsupported"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.shirts"
+    ]
+  },
+  {
+    "product_code": 26,
+    "region_id": 3949,
+    "image_url": "https://static.pxl.ai/problem/images/SW-152.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "classic"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "spring_or_fall"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "unknown"
+      },
+      {
+        "pattern": "paisley"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.sweater"
+    ]
+  },
+  {
+    "product_code": 27,
+    "region_id": 1680,
+    "image_url": "https://static.pxl.ai/problem/images/BL-108.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "preppy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "lace/mesh"
+      },
+      {
+        "sense": "unknown"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.blouses"
+    ]
+  },
+  {
+    "product_code": 28,
+    "region_id": 4354,
+    "image_url": "https://static.pxl.ai/problem/images/SW-146.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "cute"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "festival"
+      },
+      {
+        "fabric": "leather"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "none"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.sweater"
+    ]
+  },
+  {
+    "product_code": 29,
+    "region_id": 2556,
+    "image_url": "https://static.pxl.ai/problem/images/JK-285.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "trendy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "festival"
+      },
+      {
+        "fabric": "cotton"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "print"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 30,
+    "region_id": 1685,
+    "image_url": "https://static.pxl.ai/problem/images/PT-015.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "feminine_or_romantic"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "formal"
+      },
+      {
+        "fabric": "fur"
+      },
+      {
+        "sense": "formal"
+      },
+      {
+        "pattern": "dot"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 31,
+    "region_id": 4314,
+    "image_url": "https://static.pxl.ai/problem/images/CD-052.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "classic"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "polyester"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "plain"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outerwears",
+      "c3.cardigans"
+    ]
+  },
+  {
+    "product_code": 32,
+    "region_id": 2833,
+    "image_url": "https://static.pxl.ai/problem/images/SE-072.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "sexy"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "cotton"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.shoes",
+      "c2.shoes",
+      ""
+    ]
+  },
+  {
+    "product_code": 33,
+    "region_id": 3139,
+    "image_url": "https://static.pxl.ai/problem/images/BL-120.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "classic"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "none"
+      },
+      {
+        "sense": "unsupported"
+      },
+      {
+        "pattern": "camouflage"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.blouses"
+    ]
+  },
+  {
+    "product_code": 34,
+    "region_id": 4242,
+    "image_url": "https://static.pxl.ai/problem/images/SK-186.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "trendy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "sequin_or_spangle"
+      },
+      {
+        "sense": "casual"
+      },
+      {
+        "pattern": "flower"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.skirts",
+      "c3.skirts"
+    ]
+  },
+  {
+    "product_code": 35,
+    "region_id": 1912,
+    "image_url": "https://static.pxl.ai/problem/images/SH-045.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "feminine_or_romantic"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "suede_or_velvet"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "print"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.shirts"
+    ]
+  },
+  {
+    "product_code": 36,
+    "region_id": 2049,
+    "image_url": "https://static.pxl.ai/problem/images/SK-192.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "manish_or_tomboy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "date"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "chic"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.skirts",
+      "c3.skirts"
+    ]
+  },
+  {
+    "product_code": 37,
+    "region_id": 3443,
+    "image_url": "https://static.pxl.ai/problem/images/SH-051.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "trendy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "school"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "casual"
+      },
+      {
+        "pattern": "unknown"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.shirts"
+    ]
+  },
+  {
+    "product_code": 38,
+    "region_id": 3403,
+    "image_url": "https://static.pxl.ai/problem/images/BL-134.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "cute"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "summer"
+      },
+      {
+        "fabric": "lace/mesh"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "flower"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.blouses"
+    ]
+  },
+  {
+    "product_code": 39,
+    "region_id": 4544,
+    "image_url": "https://static.pxl.ai/problem/images/PT-001.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "preppy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "festival"
+      },
+      {
+        "fabric": "tweed"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "print"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 40,
+    "region_id": 1903,
+    "image_url": "https://static.pxl.ai/problem/images/SE-066.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "punk_or_rock"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "night_out"
+      },
+      {
+        "fabric": "suede_or_velvet"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "stripe"
+      }
+    ],
+    "category_names": [
+      "c1.shoes",
+      "c2.shoes",
+      ""
+    ]
+  },
+  {
+    "product_code": 41,
+    "region_id": 3411,
+    "image_url": "https://static.pxl.ai/problem/images/CD-046.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "punk_or_rock"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "chiffon/silk"
+      },
+      {
+        "sense": "unknown"
+      },
+      {
+        "pattern": "check"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outerwears",
+      "c3.cardigans"
+    ]
+  },
+  {
+    "product_code": 42,
+    "region_id": 1689,
+    "image_url": "https://static.pxl.ai/problem/images/JK-252.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "bohemian_or_ethnic_or_hippie"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "winter"
+      },
+      {
+        "fabric": "sequin_or_spangle"
+      },
+      {
+        "sense": "formal"
+      },
+      {
+        "pattern": "geometry"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 43,
+    "region_id": 3817,
+    "image_url": "https://static.pxl.ai/problem/images/CT-261.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "chic_or_modern_or_urban_or_sophisticated"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "sexy"
+      },
+      {
+        "pattern": "camouflage"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 44,
+    "region_id": 4926,
+    "image_url": "https://static.pxl.ai/problem/images/SK-179.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "retro_or_vintage"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "unknown"
+      },
+      {
+        "fabric": "polyester"
+      },
+      {
+        "sense": "sportive"
+      },
+      {
+        "pattern": "check"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.skirts",
+      "c3.skirts"
+    ]
+  },
+  {
+    "product_code": 45,
+    "region_id": 2929,
+    "image_url": "https://static.pxl.ai/problem/images/CT-275.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "manish_or_tomboy"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "unknown"
+      },
+      {
+        "fabric": "knit_or_angora"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "stripe"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 46,
+    "region_id": 1802,
+    "image_url": "https://static.pxl.ai/problem/images/SE-099.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "manish_or_tomboy"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "night_out"
+      },
+      {
+        "fabric": "none"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "geometry"
+      }
+    ],
+    "category_names": [
+      "c1.shoes",
+      "c2.shoes",
+      ""
+    ]
+  },
+  {
+    "product_code": 47,
+    "region_id": 3773,
+    "image_url": "https://static.pxl.ai/problem/images/JK-246.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "elegant_or_luxury"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "unknown"
+      },
+      {
+        "fabric": "knit/angora"
+      },
+      {
+        "sense": "feminine"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 48,
+    "region_id": 2981,
+    "image_url": "https://static.pxl.ai/problem/images/CD-091.jpg",
+    "gender": "gender.male",
+    "attributes": [
+      {
+        "style": "preppy"
+      },
+      {
+        "season": "autumn"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "chic"
+      },
+      {
+        "pattern": "ethnic"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outerwears",
+      "c3.cardigans"
+    ]
+  },
+  {
+    "product_code": 49,
+    "region_id": 4609,
+    "image_url": "https://static.pxl.ai/problem/images/SK-145.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "cute"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "knit_or_angora"
+      },
+      {
+        "sense": "casual"
+      },
+      {
+        "pattern": "leopard"
+      }
+    ],
+    "category_names": [
+      "c1.bottoms",
+      "c2.skirts",
+      "c3.skirts"
+    ]
+  },
+  {
+    "product_code": 50,
+    "region_id": 2521,
+    "image_url": "https://static.pxl.ai/problem/images/SH-086.jpg",
+    "gender": "gender.unisex",
+    "attributes": [
+      {
+        "style": "bohemian_or_ethnic_or_hippie"
+      },
+      {
+        "season": "winter"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "none"
+      },
+      {
+        "sense": "lovely"
+      },
+      {
+        "pattern": "unsupported"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.shirts"
+    ]
+  },
+  {
+    "product_code": 51,
+    "region_id": 4854,
+    "image_url": "https://static.pxl.ai/problem/images/JP-007.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "sexy"
+      },
+      {
+        "season": "summer"
+      },
+      {
+        "occasion": "lounge"
+      },
+      {
+        "fabric": "lace_or_mesh"
+      },
+      {
+        "sense": "sexy"
+      },
+      {
+        "pattern": "ethnic"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 52,
+    "region_id": 4915,
+    "image_url": "https://static.pxl.ai/problem/images/JP-013.jpg",
+    "gender": "gender.female",
+    "attributes": [
+      {
+        "style": "trendy"
+      },
+      {
+        "season": "spring"
+      },
+      {
+        "occasion": "gym_or_outdoor"
+      },
+      {
+        "fabric": "fur"
+      },
+      {
+        "sense": "luxury"
+      },
+      {
+        "pattern": "plain"
+      }
+    ],
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  }
+]

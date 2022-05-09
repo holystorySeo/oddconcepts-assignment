@@ -1,0 +1,376 @@
+[
+  {
+    "product_code": 1,
+    "name": "조끼_070",
+    "image_url": "https://static.pxl.ai/problem/images/VT-070.jpg",
+    "price": 45065,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 2,
+    "name": "원피스_019",
+    "image_url": "https://static.pxl.ai/problem/images/OP-019.jpg",
+    "price": 34592,
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 3,
+    "name": "자켓_093",
+    "image_url": "https://static.pxl.ai/problem/images/JK-093.jpg",
+    "price": 20544,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 4,
+    "name": "자켓_087",
+    "image_url": "https://static.pxl.ai/problem/images/JK-087.jpg",
+    "price": 23371,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 5,
+    "name": "조끼_064",
+    "image_url": "https://static.pxl.ai/problem/images/VT-064.jpg",
+    "price": 33901,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 6,
+    "name": "원피스_025",
+    "image_url": "https://static.pxl.ai/problem/images/OP-025.jpg",
+    "price": 18965,
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 7,
+    "name": "바지_217",
+    "image_url": "https://static.pxl.ai/problem/images/PT-217.jpg",
+    "price": 22797,
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 8,
+    "name": "조끼_058",
+    "image_url": "https://static.pxl.ai/problem/images/VT-058.jpg",
+    "price": 29103,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.vests"
+    ]
+  },
+  {
+    "product_code": 9,
+    "name": "원피스_031",
+    "image_url": "https://static.pxl.ai/problem/images/OP-031.jpg",
+    "price": 39983,
+    "category_names": [
+      "c1.onepiece",
+      "c2.dresses",
+      ""
+    ]
+  },
+  {
+    "product_code": 10,
+    "name": "바지_203",
+    "image_url": "https://static.pxl.ai/problem/images/PT-203.jpg",
+    "price": 38292,
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 11,
+    "name": "코트_088",
+    "image_url": "https://static.pxl.ai/problem/images/CT-088.jpg",
+    "price": 22110,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 12,
+    "name": "코트_063",
+    "image_url": "https://static.pxl.ai/problem/images/CT-063.jpg",
+    "price": 46796,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 13,
+    "name": "점퍼_239",
+    "image_url": "https://static.pxl.ai/problem/images/JP-239.jpg",
+    "price": 43583,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 14,
+    "name": "자켓_050",
+    "image_url": "https://static.pxl.ai/problem/images/JK-050.jpg",
+    "price": 11683,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 15,
+    "name": "니트_115",
+    "image_url": "https://static.pxl.ai/problem/images/KN-115.jpg",
+    "price": 17952,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 16,
+    "name": "니트_101",
+    "image_url": "https://static.pxl.ai/problem/images/KN-101.jpg",
+    "price": 30487,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 17,
+    "name": "자켓_044",
+    "image_url": "https://static.pxl.ai/problem/images/JK-044.jpg",
+    "price": 43408,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 18,
+    "name": "코트_077",
+    "image_url": "https://static.pxl.ai/problem/images/CT-077.jpg",
+    "price": 36850,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.coats"
+    ]
+  },
+  {
+    "product_code": 19,
+    "name": "점퍼_205",
+    "image_url": "https://static.pxl.ai/problem/images/JP-205.jpg",
+    "price": 20444,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 20,
+    "name": "니트_129",
+    "image_url": "https://static.pxl.ai/problem/images/KN-129.jpg",
+    "price": 16675,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.knitwear"
+    ]
+  },
+  {
+    "product_code": 21,
+    "name": "자켓_078",
+    "image_url": "https://static.pxl.ai/problem/images/JK-078.jpg",
+    "price": 15113,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 22,
+    "name": "점퍼_211",
+    "image_url": "https://static.pxl.ai/problem/images/JP-211.jpg",
+    "price": 26204,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.outer"
+    ]
+  },
+  {
+    "product_code": 23,
+    "name": "바지_029",
+    "image_url": "https://static.pxl.ai/problem/images/PT-029.jpg",
+    "price": 41006,
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 24,
+    "name": "자켓_291",
+    "image_url": "https://static.pxl.ai/problem/images/JK-291.jpg",
+    "price": 33574,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 25,
+    "name": "셔츠_079",
+    "image_url": "https://static.pxl.ai/problem/images/SH-079.jpg",
+    "price": 30427,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.shirts"
+    ]
+  },
+  {
+    "product_code": 26,
+    "name": "스웨터_152",
+    "image_url": "https://static.pxl.ai/problem/images/SW-152.jpg",
+    "price": 10818,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.sweater"
+    ]
+  },
+  {
+    "product_code": 27,
+    "name": "블라우스_108",
+    "image_url": "https://static.pxl.ai/problem/images/BL-108.jpg",
+    "price": 46373,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.blouses"
+    ]
+  },
+  {
+    "product_code": 28,
+    "name": "스웨터_146",
+    "image_url": "https://static.pxl.ai/problem/images/SW-146.jpg",
+    "price": 10226,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.sweater"
+    ]
+  },
+  {
+    "product_code": 29,
+    "name": "자켓_285",
+    "image_url": "https://static.pxl.ai/problem/images/JK-285.jpg",
+    "price": 34411,
+    "category_names": [
+      "c1.tops",
+      "c2.outwears",
+      "c3.jackets"
+    ]
+  },
+  {
+    "product_code": 30,
+    "name": "바지_015",
+    "image_url": "https://static.pxl.ai/problem/images/PT-015.jpg",
+    "price": 41008,
+    "category_names": [
+      "c1.bottoms",
+      "c2.pants",
+      "c3.pants"
+    ]
+  },
+  {
+    "product_code": 31,
+    "name": "가디건_052",
+    "image_url": "https://static.pxl.ai/problem/images/CD-052.jpg",
+    "price": 37020,
+    "category_names": [
+      "c1.tops",
+      "c2.outerwears",
+      "c3.cardigans"
+    ]
+  },
+  {
+    "product_code": 32,
+    "name": "신발_072",
+    "image_url": "https://static.pxl.ai/problem/images/SE-072.jpg",
+    "price": 19301,
+    "category_names": [
+      "c1.shoes",
+      "c2.shoes",
+      ""
+    ]
+  },
+  {
+    "product_code": 33,
+    "name": "블라우스_120",
+    "image_url": "https://static.pxl.ai/problem/images/BL-120.jpg",
+    "price": 44526,
+    "category_names": [
+      "c1.tops",
+      "c2.tops",
+      "c3.blouses"
+    ]
+  },
+  {
+    "product_code": 34,
+    "name": "치마_186",
+    "image_url": "https://static.pxl.ai/problem/images/SK-186.jpg",
+    "price": 38546,
+    "category_names": [
+      "c1.bottoms",
+      "c2.skirts",
+      "c3.skirts"
+    ]
+  }
+]
