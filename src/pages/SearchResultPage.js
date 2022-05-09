@@ -11,20 +11,26 @@ export default function SearchResultPage() {
 
   return (
     <SearchResultPageContainer>
-      {productList
-        .slice((currentPage - 1) * postLimit, postLimit * currentPage)
-        .map((data) => {
-          return (
-            <div className="post-box">
-              <div className="post-image">
-                <img src={data.image_url} alt="없음" />
-              </div>
-              <div className="post-name">{data.name}</div>
-              <div className="post-price">{data.price}</div>
-            </div>
-          );
-        })}
-      <Pagination />
+      {loading ? (
+        <LoadingPage />
+      ) : (
+        <div>
+          {productList
+            .slice((currentPage - 1) * postLimit, postLimit * currentPage)
+            .map((data, idx) => {
+              return (
+                <div className="post-box" key={`post-idx${idx}`}>
+                  <div className="post-image">
+                    <img src={data.image_url} alt="없음" />
+                  </div>
+                  <div className="post-name">{data.name}</div>
+                  <div className="post-price">{data.price}</div>
+                </div>
+              );
+            })}
+          <Pagination />
+        </div>
+      )}
     </SearchResultPageContainer>
   );
 }
