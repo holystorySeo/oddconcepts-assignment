@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function NotPound() {
+export default function NoResult() {
   return (
     <StyledNotFound>
-      <p>404 ERROR 페이지를 찾을 수 없습니다.</p>
-      <p>올바른 경로로 접근해주세요!</p>
+      <p>검색 결과가 없습니다. 다른 검색어를 입력해 주세요.</p>
+      <p>HTTP Status 404 - Not Found</p>
     </StyledNotFound>
   );
 }
-
-export default NotPound;
 
 const StyledNotFound = styled.div`
   width: 100%;

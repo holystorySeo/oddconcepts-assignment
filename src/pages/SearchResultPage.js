@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import Pagination from '../components/Pagination';
 import LoadingPage from './LoadingPage';
+import NotResultPage from './NoResultPage';
 
 export default function SearchResultPage() {
   const { productList, loading, error, currentPage, postLimit } = useSelector(
@@ -14,29 +15,33 @@ export default function SearchResultPage() {
       {loading ? (
         <LoadingPage />
       ) : (
-        <div>
-          {productList
-            .slice((currentPage - 1) * postLimit, postLimit * currentPage)
-            .map((data, idx) => {
-              return (
-                <div className="post-box" key={`post-idx${idx}`}>
-                  <div
-                    role="presentation"
-                    className="post-image"
-                    onClick={() => window.open(`${data.image_url}`, '_blank')}
-                  >
-                    <img src={data.image_url} alt="없음" />
+        <div className="post-list">
+          {productList.length === 0 ? (
+            <NotResultPage />
+          ) : (
+            productList
+              .slice((currentPage - 1) * postLimit, postLimit * currentPage)
+              .map((data, idx) => {
+                return (
+                  <div className="post-box" key={`post-idx${idx}`}>
+                    <div
+                      role="presentation"
+                      className="post-image"
+                      onClick={() => window.open(`${data.image_url}`, '_blank')}
+                    >
+                      <img src={data.image_url} alt="없음" />
+                    </div>
+                    <div className="post-name">{data.name}</div>
+                    <div className="post-price">
+                      {Number(data.price)
+                        .toString()
+                        .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+                    </div>
                   </div>
-                  <div className="post-name">{data.name}</div>
-                  <div className="post-price">
-                    {Number(data.price)
-                      .toString()
-                      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
-                  </div>
-                </div>
-              );
-            })}
-          <Pagination />
+                );
+              })
+          )}
+          {productList.length === 0 ? '' : <Pagination />}
         </div>
       )}
     </SearchResultPageContainer>

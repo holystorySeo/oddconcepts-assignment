@@ -6,7 +6,7 @@ export default function LoadingPage() {
   return (
     <StyledLoading className="loading">
       <RotatingLines width="70" />
-      <p>데이터를 집계중입니다!!</p>
+      <p>데이터를 찾고 있습니다!</p>
     </StyledLoading>
   );
 }
@@ -18,7 +18,7 @@ const StyledLoading = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+
   p {
     margin-top: 30px;
     color: gray;
