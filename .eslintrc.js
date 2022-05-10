@@ -45,5 +45,6 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'react/jsx-key': 'off',
     'no-use-before-define': 'off',
+    'react/no-unstable-nested-components': 'off',
   },
 };

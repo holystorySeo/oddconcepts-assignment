@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
-import { inputChange } from '../../store/productSlice';
+import { inputChange, setSearchStuff } from '../../store/productSlice';
 
 export default function SearchBar() {
   const [inputValue, setInputValue] = useState('');
@@ -9,6 +9,13 @@ export default function SearchBar() {
 
   // 입력값이 변경되고 전역저장소의 inputValue의 값도 변경된다.
   const inputValueHandler = (e) => {
+    const checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+
+    if (checkKor.test(e.target.value)) {
+      dispatch(setSearchStuff(true));
+    } else {
+      dispatch(setSearchStuff(false));
+    }
     setInputValue(e.target.value);
     dispatch(inputChange(e.target.value));
   };

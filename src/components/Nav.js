@@ -53,7 +53,7 @@ export default function Nav() {
 const NavContainer = styled.div`
   background-color: white;
   width: 100%;
-  height: 4rem;
+  min-height: 4rem;
   position: sticky;
   top: 0;
   border-bottom: solid 1px rgb(212, 212, 212);

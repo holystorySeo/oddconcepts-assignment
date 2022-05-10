@@ -21,10 +21,11 @@ const WholeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 700px;
-  height: 600px;
+  min-width: 700px;
+  height: 100%;
 
   .search-text {
+    margin-top: -200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@ const WholeContainer = styled.div`
     font-weight: 700;
     margin-bottom: 70px;
     line-height: 1.6;
+
     ::before {
       content: 'Artificial Intelligence';
     }
@@ -42,7 +44,7 @@ const WholeContainer = styled.div`
   }
 
   .search-section {
-    width: 100%;
+    width: 35%;
     height: 65px;
     border-radius: 42px;
     background-color: #ffffff;

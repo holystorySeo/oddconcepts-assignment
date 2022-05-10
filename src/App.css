@@ -38,10 +38,3 @@ a:hover {
   width: 1.2rem;
   line-height: 1.2rem;
 }
-
-.routing-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
