@@ -44,29 +44,31 @@ const PostListforCodeURLContainer = styled.div`
   justify-content: center;
   height: auto;
   margin-top: 1rem;
-  /* border: 2px solid black; */
 
   .post-list {
     width: 90%;
     height: 100%;
 
     @media screen and (min-width: 1566px) {
-      width: 1232px; // 한줄에 6개 4줄 24개
+      width: 1232px; // 한줄에 7개 4줄 28개
     }
     @media screen and (min-width: 1345px) and (max-width: 1565px) {
-      width: 1058px; // 한줄에 5개 4줄 20개
+      width: 1058px; // 한줄에 6개 4줄 24개
     }
-    @media screen and (min-width: 1028px) and (max-width: 1344px) {
+    @media screen and (min-width: 1200px) and (max-width: 1344px) {
+      width: 880px; // 한줄에 5개 4줄 20개
+    }
+    @media screen and (min-width: 1038px) and (max-width: 1199px) {
       width: 705px; // 한줄에 4개 4줄 16개
     }
-    @media screen and (min-width: 858px) and (max-width: 1027px) {
+    @media screen and (min-width: 866px) and (max-width: 1037px) {
       width: 530px; // 한줄에 3개 4줄 12개
     }
-    @media screen and (min-width: 747px) and (max-width: 857px) {
-      width: 352px; // 한줄에 2개 4줄 8개
+    @media screen and (min-width: 790px) and (max-width: 865px) {
+      width: 355px; // 한줄에 2개 4줄 8개
     }
-    @media screen and (max-width: 746px) {
-      width: 300px;
+    @media screen and (min-width: 747px) and (max-width: 789px) {
+      width: 355px;
     }
   }
 
@@ -77,11 +79,6 @@ const PostListforCodeURLContainer = styled.div`
     border: 1px solid #bdbdbd;
     border-radius: 5px;
     margin: 0.5rem;
-
-    @media screen and (max-width: 746px) {
-      width: 300px;
-      margin: 2rem 0 0 0;
-    }
   }
 
   .post-image {

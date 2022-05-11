@@ -3,6 +3,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import getItemFrom from '../utils/getItemFromLocalStorage';
+import setItemsTo from '../utils/setItemToLocalStorage';
 
 // axios와 redux-thunk로 비동기 통신
 export const getProductList = createAsyncThunk(
@@ -15,6 +17,11 @@ export const getProductList = createAsyncThunk(
 
     // keyword 입력할 경우
     if (checkKor.test(searchStuff)) {
+      if (getItemFrom(searchStuff)) {
+        const resultData = getItemFrom(searchStuff);
+        return resultData;
+      }
+
       const productList = await axios
         .get('https://static.pxl.ai/problem/data/products.json')
         .then((res) => {
@@ -34,11 +41,17 @@ export const getProductList = createAsyncThunk(
           alert(err);
           useNavigate('/');
         });
+      setItemsTo(searchStuff, { product: productList, leftside: [] });
       return { product: productList, leftside: [] };
     }
 
     // product_code 입력시
     if (checkOnlyNum.test(searchStuff)) {
+      if (getItemFrom(searchStuff)) {
+        const resultData = getItemFrom(searchStuff);
+        return resultData;
+      }
+
       let c1Info = ''; // c1 정보
       let productCode; // regions 검색 위한 product_code
       let imageUrl = '';
@@ -89,6 +102,12 @@ export const getProductList = createAsyncThunk(
           alert(err);
           useNavigate('/');
         });
+
+      setItemsTo(searchStuff, {
+        product: productList,
+        leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
+      });
+
       return {
         product: productList,
         leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
@@ -97,6 +116,11 @@ export const getProductList = createAsyncThunk(
 
     // image_url 입력시
     if (checkUrl.test(searchStuff)) {
+      if (getItemFrom(searchStuff)) {
+        const resultData = getItemFrom(searchStuff);
+        return resultData;
+      }
+
       let c1Info = ''; // c1 정보
       let productCode; // regions 검색 위한 product_code
       let imageUrl = '';
@@ -144,6 +168,12 @@ export const getProductList = createAsyncThunk(
           alert(err);
           useNavigate('/');
         });
+
+      setItemsTo(searchStuff, {
+        product: productList,
+        leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
+      });
+
       return {
         product: productList,
         leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
@@ -213,20 +243,18 @@ const productSlice = createSlice({
         }
         // leftsidebar가 있는 경우(img_url or product_code로 검색한 경우)
       } else if (state.loading === true) {
-        if (window.screen.width >= 1463) {
+        if (window.screen.width >= 1566) {
           state.postLimit = 28;
-        } else if (window.screen.width >= 1260) {
+        } else if (window.screen.width >= 1345) {
           state.postLimit = 24;
-        } else if (window.screen.width >= 1056) {
+        } else if (window.screen.width >= 1200) {
           state.postLimit = 20;
-        } else if (window.screen.width >= 852) {
+        } else if (window.screen.width >= 1038) {
           state.postLimit = 16;
-        } else if (window.screen.width >= 685) {
+        } else if (window.screen.width >= 866) {
           state.postLimit = 12;
-        } else if (window.screen.width >= 500) {
+        } else if (window.screen.width >= 790) {
           state.postLimit = 8;
-        } else if (window.screen.width <= 499) {
-          state.postLimit = 4;
         }
       }
 
