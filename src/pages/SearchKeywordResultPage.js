@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Rendering from '../components/Rendering';
 
-export default function SearchResultPage() {
+export default function SearchKeywordResultPage() {
   return (
-    <SearchResultPageContainer>
+    <SearchKeywordResultPageContainer>
       <Rendering />
-    </SearchResultPageContainer>
+    </SearchKeywordResultPageContainer>
   );
 }
 
-const SearchResultPageContainer = styled.div`
+const SearchKeywordResultPageContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;

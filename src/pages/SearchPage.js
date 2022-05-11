@@ -17,23 +17,20 @@ export default function SearchPage() {
 
 const WholeContainer = styled.div`
   width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-width: 700px;
-  height: 100%;
+  margin-top: -200px;
 
   .search-text {
-    margin-top: -200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 2.125rem;
     font-weight: 700;
-    margin-bottom: 70px;
-    line-height: 1.6;
+    margin-bottom: 90px;
 
     ::before {
       content: 'Artificial Intelligence';
@@ -45,6 +42,7 @@ const WholeContainer = styled.div`
 
   .search-section {
     width: 35%;
+    min-width: 300px;
     height: 65px;
     border-radius: 42px;
     background-color: #ffffff;

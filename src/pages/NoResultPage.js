@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function NoResult() {
+export default function NoResult({ text, message }) {
   return (
     <StyledNotFound>
-      <p>검색 결과가 없습니다. 다른 검색어를 입력해 주세요.</p>
-      <p>HTTP Status 404 - Not Found</p>
+      <p>{text}</p>
+      <p>{message}</p>
     </StyledNotFound>
   );
 }

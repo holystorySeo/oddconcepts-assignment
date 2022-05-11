@@ -5,13 +5,13 @@ import Pagination from './Pagination';
 import LoadingPage from '../pages/LoadingPage';
 import NotResultPage from '../pages/NoResultPage';
 
-export default function PostList() {
+export default function PostListforCodeURL() {
   const { productList, currentPage, postLimit } = useSelector(
     (state) => state.product,
   );
 
   return (
-    <PostListContainer>
+    <PostListforCodeURLContainer>
       <div className="post-list">
         {productList
           .slice((currentPage - 1) * postLimit, postLimit * currentPage)
@@ -33,42 +33,40 @@ export default function PostList() {
             </div>
           ))}
       </div>
-    </PostListContainer>
+    </PostListforCodeURLContainer>
   );
 }
 
-const PostListContainer = styled.div`
+const PostListforCodeURLContainer = styled.div`
   min-width: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
   height: auto;
   margin-top: 1rem;
+  /* border: 2px solid black; */
 
   .post-list {
     width: 90%;
     height: 100%;
 
-    @media screen and (min-width: 1463px) {
-      width: 1430px; // 한줄에 7개 4줄 28개
+    @media screen and (min-width: 1566px) {
+      width: 1232px; // 한줄에 6개 4줄 24개
     }
-    @media screen and (min-width: 1260px) and (max-width: 1462px) {
-      width: 1226px; // 한줄에 6개 4줄 24개
+    @media screen and (min-width: 1345px) and (max-width: 1565px) {
+      width: 1058px; // 한줄에 5개 4줄 20개
     }
-    @media screen and (min-width: 1056px) and (max-width: 1259px) {
-      width: 1022px; // 한줄에 5개 4줄 20개
+    @media screen and (min-width: 1028px) and (max-width: 1344px) {
+      width: 705px; // 한줄에 4개 4줄 16개
     }
-    @media screen and (min-width: 852px) and (max-width: 1055px) {
-      width: 818px; // 한줄에 4개 4줄 16개
+    @media screen and (min-width: 858px) and (max-width: 1027px) {
+      width: 530px; // 한줄에 3개 4줄 12개
     }
-    @media screen and (min-width: 685px) and (max-width: 851px) {
-      width: 614px; // 한줄에 3개 4줄 12개
+    @media screen and (min-width: 747px) and (max-width: 857px) {
+      width: 352px; // 한줄에 2개 4줄 8개
     }
-    @media screen and (min-width: 500px) and (max-width: 684px) {
-      width: 410px; // 한줄에 2개 4줄 8개
-    }
-    @media screen and (max-width: 499px) {
-      width: 270px; // 한줄에 1개 4줄 4개
+    @media screen and (max-width: 746px) {
+      width: 300px;
     }
   }
 
@@ -80,18 +78,15 @@ const PostListContainer = styled.div`
     border-radius: 5px;
     margin: 0.5rem;
 
-    @media screen and (max-width: 499px) {
-      width: 250px;
-      height: 800px;
-    }
-    @media screen and (min-width: 500px) {
-      width: 188px;
+    @media screen and (max-width: 746px) {
+      width: 300px;
+      margin: 2rem 0 0 0;
     }
   }
 
   .post-image {
     width: 100%;
-    height: 60%;
+    height: 80%;
     display: flex;
     justify-content: center;
     margin-bottom: 0.4rem;
@@ -107,7 +102,7 @@ const PostListContainer = styled.div`
 
   .post-name {
     width: 100%;
-    height: 15%;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +110,7 @@ const PostListContainer = styled.div`
 
   .post-price {
     width: 100%;
-    height: 15%;
+    height: 12%;
     display: flex;
     align-items: center;
     justify-content: flex-end;

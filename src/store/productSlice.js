@@ -1,6 +1,8 @@
+/* eslint-disable no-alert */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 // axios와 redux-thunk로 비동기 통신
 export const getProductList = createAsyncThunk(
@@ -9,7 +11,7 @@ export const getProductList = createAsyncThunk(
     const checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; // 한글이 포함되었는지 여부
     const checkOnlyNum = /^[0-9]*$/; // 숫자로만 구성되었는지 여부
     const makeKor = /[^ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g; // name에서 숫자제외하고 한글로만 만들기
-    const checkUrl = /^(http(s)?:\/\/)/gi;
+    const checkUrl = /^(http(s)?:\/\/)/gi; // URL인지 확인
 
     // keyword 입력할 경우
     if (checkKor.test(searchStuff)) {
@@ -28,7 +30,10 @@ export const getProductList = createAsyncThunk(
           });
           return filterData;
         })
-        .catch((err) => err);
+        .catch((err) => {
+          alert(err);
+          useNavigate('/');
+        });
       return { product: productList, leftside: [] };
     }
 
@@ -49,7 +54,10 @@ export const getProductList = createAsyncThunk(
               imageUrl = info.image_url;
               const productName = info.name.replace(makeKor, '');
               res.data.forEach((info) => {
-                if (info.name.includes(productName)) {
+                if (
+                  info.name.includes(productName) &&
+                  info.product_code !== productCode
+                ) {
                   filterData.push({
                     name: info.name,
                     price: info.price,
@@ -61,7 +69,10 @@ export const getProductList = createAsyncThunk(
           });
           return filterData;
         })
-        .catch((err) => err);
+        .catch((err) => {
+          alert(err);
+          useNavigate('/');
+        });
 
       const leftsideList = await axios
         .get('https://static.pxl.ai/problem/data/regions.json')
@@ -74,7 +85,10 @@ export const getProductList = createAsyncThunk(
           });
           return filterData;
         })
-        .catch((err) => err);
+        .catch((err) => {
+          alert(err);
+          useNavigate('/');
+        });
       return {
         product: productList,
         leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
@@ -110,7 +124,10 @@ export const getProductList = createAsyncThunk(
           });
           return filterData;
         })
-        .catch((err) => err);
+        .catch((err) => {
+          alert(err);
+          useNavigate('/');
+        });
 
       const leftsideList = await axios
         .get('https://static.pxl.ai/problem/data/regions.json')
@@ -123,7 +140,10 @@ export const getProductList = createAsyncThunk(
           });
           return filterData;
         })
-        .catch((err) => err);
+        .catch((err) => {
+          alert(err);
+          useNavigate('/');
+        });
       return {
         product: productList,
         leftside: { image: imageUrl, c1: c1Info, left: leftsideList },
@@ -160,6 +180,9 @@ const productSlice = createSlice({
     setSearchStuff(state, action) {
       state.searchStuff = action.payload;
     },
+    setPostLimit(state, action) {
+      state.searchStuff = action.payload;
+    },
   },
 
   // thunk 통신 결과에 따른 전역변수 상태 변경
@@ -171,12 +194,46 @@ const productSlice = createSlice({
       }
     },
     [getProductList.fulfilled]: (state, action) => {
-      if (state.loading === true) {
-        state.loading = false;
-        state.productList = action.payload.product;
-        state.leftsideList = action.payload.leftside;
-        state.inputValue = '';
+      // leftsidebar가 없는 경우(keyword로 검색한 경우)
+      if (state.loading === true && action.payload.leftside.length === 0) {
+        if (window.screen.width >= 1463) {
+          state.postLimit = 28;
+        } else if (window.screen.width >= 1260) {
+          state.postLimit = 24;
+        } else if (window.screen.width >= 1056) {
+          state.postLimit = 20;
+        } else if (window.screen.width >= 852) {
+          state.postLimit = 16;
+        } else if (window.screen.width >= 685) {
+          state.postLimit = 12;
+        } else if (window.screen.width >= 500) {
+          state.postLimit = 8;
+        } else if (window.screen.width <= 499) {
+          state.postLimit = 4;
+        }
+        // leftsidebar가 있는 경우(img_url or product_code로 검색한 경우)
+      } else if (state.loading === true) {
+        if (window.screen.width >= 1463) {
+          state.postLimit = 28;
+        } else if (window.screen.width >= 1260) {
+          state.postLimit = 24;
+        } else if (window.screen.width >= 1056) {
+          state.postLimit = 20;
+        } else if (window.screen.width >= 852) {
+          state.postLimit = 16;
+        } else if (window.screen.width >= 685) {
+          state.postLimit = 12;
+        } else if (window.screen.width >= 500) {
+          state.postLimit = 8;
+        } else if (window.screen.width <= 499) {
+          state.postLimit = 4;
+        }
       }
+
+      state.loading = false;
+      state.productList = action.payload.product;
+      state.leftsideList = action.payload.leftside;
+      state.inputValue = '';
     },
     [getProductList.rejected]: (state, action) => {
       if (state.loading === true) {
@@ -193,5 +250,6 @@ export const {
   changeCurrentPage,
   changePostLimit,
   setSearchStuff,
+  setPostLimit,
 } = productSlice.actions;
 export default productSlice.reducer;

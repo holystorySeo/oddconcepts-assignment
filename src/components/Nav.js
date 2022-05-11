@@ -54,7 +54,7 @@ const NavContainer = styled.div`
   background-color: white;
   width: 100%;
   min-height: 4rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   border-bottom: solid 1px rgb(212, 212, 212);
   display: grid;

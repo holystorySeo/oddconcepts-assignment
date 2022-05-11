@@ -20,14 +20,28 @@ export default function SearchBtn() {
   }, [inputValue]);
 
   const handleSearch = () => {
+    const checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; // 한글이 포함되었는지 여부
+    const checkOnlyNum = /^[0-9]*$/; // 숫자로만 구성되었는지 여부
+    const checkUrl = /^(http(s)?:\/\/)/gi; // URL인지 확인
+
     dispatch(getProductList(inputValue));
-    navigate({
-      pathname: '/search',
-      search: `?${createSearchParams({
-        keyword: inputValue,
-      })}`,
-    });
+
+    // keyword 입력한 경우 브라우저 주소입력창의 주소 설정
+    if (checkKor.test(inputValue)) {
+      navigate(`/search/keyword?query=${inputValue}`);
+    }
+
+    // product_code 입력한 경우
+    if (checkOnlyNum.test(inputValue)) {
+      navigate(`/search/code?query=${inputValue}`);
+    }
+
+    // img_url 입력한 경우
+    if (checkUrl.test(inputValue)) {
+      navigate(`/search/url?query=${inputValue}`);
+    }
   };
+
   return <WholeContainer disabled={isActive} onClick={handleSearch} />;
 }
 
@@ -48,6 +62,7 @@ const WholeContainer = styled.button`
   cursor: color: ${(props) => (props.disabled ? 'none' : 'pointer')};
 
   -webkit-font-smoothing: antialiased;
+
 
   ::after {
     content: '검색';
