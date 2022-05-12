@@ -16,12 +16,12 @@ export default function SearchPage() {
 }
 
 const WholeContainer = styled.div`
-  width: 100%;
-  height: 300px;
+  width: 120%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: -200px;
+  flex-direction: column;
+  margin-top: -10%;
 
   .search-text {
     width: 100%;

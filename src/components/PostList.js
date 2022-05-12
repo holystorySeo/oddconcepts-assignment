@@ -38,37 +38,43 @@ export default function PostList() {
 }
 
 const PostListContainer = styled.div`
-  min-width: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
   height: auto;
   margin-top: 1rem;
+  /* border: 1px solid blue; */
 
   .post-list {
     width: 90%;
     height: 100%;
+    /* border: 5px solid red; */
 
     @media screen and (min-width: 1463px) {
-      width: 1430px; // 한줄에 7개 4줄 28개
+      width: 1425px; // 한줄에 8개 4줄 32개
     }
-    @media screen and (min-width: 1260px) and (max-width: 1462px) {
-      width: 1226px; // 한줄에 6개 4줄 24개
+    @media screen and (min-width: 1280px) and (max-width: 1462px) {
+      width: 1247px; // 한줄에 7개 4줄 28개
     }
-    @media screen and (min-width: 1056px) and (max-width: 1259px) {
-      width: 1022px; // 한줄에 5개 4줄 20개
+    @media screen and (min-width: 1106px) and (max-width: 1279px) {
+      width: 1070px; // 한줄에 6개 4줄 24개
     }
-    @media screen and (min-width: 852px) and (max-width: 1055px) {
-      width: 818px; // 한줄에 4개 4줄 16개
+    @media screen and (min-width: 923px) and (max-width: 1105px) {
+      width: 890px; // 한줄에 5개 4줄 20개
     }
-    @media screen and (min-width: 685px) and (max-width: 851px) {
-      width: 614px; // 한줄에 3개 4줄 12개
+    @media screen and (min-width: 745px) and (max-width: 922px) {
+      width: 713px; // 한줄에 4개 4줄 16개
     }
-    @media screen and (min-width: 500px) and (max-width: 684px) {
-      width: 410px; // 한줄에 2개 4줄 8개
+    @media screen and (min-width: 565px) and (max-width: 744px) {
+      width: 535px; // 한줄에 3개 4줄 12개
     }
-    @media screen and (max-width: 499px) {
-      width: 270px; // 한줄에 1개 4줄 4개
+    @media screen and (min-width: 468px) and (max-width: 564px) {
+      width: 356px; // 한줄에 2개 4줄 4개
+    }
+    @media screen and (max-width: 467px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -80,25 +86,28 @@ const PostListContainer = styled.div`
     border-radius: 5px;
     margin: 0.5rem;
 
-    @media screen and (max-width: 499px) {
-      width: 250px;
-      height: 800px;
-    }
-    @media screen and (min-width: 500px) {
-      width: 188px;
+    @media screen and (max-width: 467px) {
+      width: 299px;
+      height: 600px;
+      margin: 0 0 1rem 0;
     }
   }
 
   .post-image {
     width: 100%;
-    height: 60%;
+    height: 80%;
     display: flex;
     justify-content: center;
     margin-bottom: 0.4rem;
     cursor: pointer;
 
+    @media screen and (max-width: 467px) {
+      height: 90%;
+    }
+
     img {
-      border-radius: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -107,20 +116,28 @@ const PostListContainer = styled.div`
 
   .post-name {
     width: 100%;
-    height: 15%;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 467px) {
+      height: 5%;
+    }
   }
 
   .post-price {
-    width: 100%;
-    height: 15%;
+    height: 12%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 1rem;
-    font-weight: 600;
+    font-weight: 800;
+    color: coral;
+
+    @media screen and (max-width: 467px) {
+      height: 5%;
+    }
 
     ::before {
       content: '₩';

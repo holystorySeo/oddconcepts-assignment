@@ -19,7 +19,9 @@ export const getProductList = createAsyncThunk(
     if (checkKor.test(searchStuff)) {
       if (getItemFrom(searchStuff)) {
         const resultData = getItemFrom(searchStuff);
-        return resultData;
+        if (resultData !== null) {
+          return resultData;
+        }
       }
 
       const productList = await axios
@@ -227,19 +229,19 @@ const productSlice = createSlice({
       // leftsidebar가 없는 경우(keyword로 검색한 경우)
       if (state.loading === true && action.payload.leftside.length === 0) {
         if (window.screen.width >= 1463) {
-          state.postLimit = 28;
+          state.postLimit = 32;
         } else if (window.screen.width >= 1260) {
-          state.postLimit = 24;
+          state.postLimit = 28;
         } else if (window.screen.width >= 1056) {
-          state.postLimit = 20;
+          state.postLimit = 24;
         } else if (window.screen.width >= 852) {
-          state.postLimit = 16;
+          state.postLimit = 20;
         } else if (window.screen.width >= 685) {
-          state.postLimit = 12;
+          state.postLimit = 16;
         } else if (window.screen.width >= 500) {
-          state.postLimit = 8;
+          state.postLimit = 12;
         } else if (window.screen.width <= 499) {
-          state.postLimit = 4;
+          state.postLimit = 8;
         }
         // leftsidebar가 있는 경우(img_url or product_code로 검색한 경우)
       } else if (state.loading === true) {

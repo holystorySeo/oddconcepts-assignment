@@ -21,10 +21,12 @@ export default function Rendering() {
   // 검색 결과가 없는 경우
   if (loading === false && productList.length === 0 && error === '') {
     return (
-      <NoResultPage
-        text="검색 결과가 없습니다. 다른 검색어를 입력해 주세요"
-        message="http status code 404"
-      />
+      <RenderingContainer>
+        <NoResultPage
+          text="검색 결과가 없습니다. 다른 검색어를 입력해 주세요"
+          message="http status code 404"
+        />
+      </RenderingContainer>
     );
   }
 
@@ -35,10 +37,12 @@ export default function Rendering() {
     error === ''
   ) {
     return (
-      <div className="postlist-pagination">
-        <PostList />
-        <Pagination />
-      </div>
+      <RenderingContainer>
+        <div className="postlist-pagination">
+          <PostList />
+          <Pagination />
+        </div>
+      </RenderingContainer>
     );
   }
 
@@ -62,24 +66,22 @@ export default function Rendering() {
   // 통신 response error 발생시
   if (error !== '') {
     return (
-      <NoResultPage
-        text="데이터 통신 요청 중에 에러가 발생했습니다."
-        message="http status code 404"
-      />
+      <RenderingContainer>
+        <NoResultPage
+          text="데이터 통신 요청 중에 에러가 발생했습니다."
+          message="http status code 404"
+        />
+      </RenderingContainer>
     );
   }
 }
 
 const RenderingContainer = styled.div`
+  margin-top: 4rem;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border: 10px solid red; */
-
-  @media screen and (max-width: 746px) {
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-  }
+  /* border: 1px solid red; */
 `;

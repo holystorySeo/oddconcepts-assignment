@@ -69,6 +69,9 @@ const PostListforCodeURLContainer = styled.div`
     }
     @media screen and (min-width: 747px) and (max-width: 789px) {
       width: 355px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -106,13 +109,13 @@ const PostListforCodeURLContainer = styled.div`
   }
 
   .post-price {
-    width: 100%;
     height: 12%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 1rem;
-    font-weight: 600;
+    font-weight: 800;
+    color: coral;
 
     ::before {
       content: '₩';

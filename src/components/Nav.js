@@ -36,15 +36,6 @@ export default function Nav() {
             태그달기
           </span>
         </Link>
-        <Link to="/cart">
-          <span
-            role="presentation"
-            className={`submenu ${selectedTab === 2 ? 'submenu--focused' : ''}`}
-            onClick={() => tabHandler(2)}
-          >
-            장바구니
-          </span>
-        </Link>
       </div>
     </NavContainer>
   );
@@ -69,6 +60,10 @@ const NavContainer = styled.div`
     width: 70px;
     margin-right: 1rem;
     vertical-align: middle;
+
+    @media screen and (max-width: 559px) {
+      margin: 0;
+    }
   }
 
   #menu {
@@ -78,6 +73,10 @@ const NavContainer = styled.div`
     position: absolute;
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 559px) {
+      display: none;
+    }
   }
 
   .submenu {
@@ -86,12 +85,23 @@ const NavContainer = styled.div`
     align-items: center;
     justify-content: center;
     color: #848484;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 700;
     cursor: pointer;
 
     &.submenu--focused {
       color: black;
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin: 0.7rem;
+  }
+
+  a:hover {
+    color: #4000c7;
   }
 `;
