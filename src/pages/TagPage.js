@@ -7,7 +7,6 @@ export default function TagPage() {
   const [ctx, setCtx] = useState();
 
   const drawing = (e) => {
-    console.log('1');
     ctx.strokeStyle = 'red';
     const x = e.clientX - canvasRef.current.offsetLeft;
     const y = e.clientY - canvasRef.current.offsetTop;
@@ -18,9 +17,7 @@ export default function TagPage() {
 
   return (
     <TagPageContainer>
-      <canvas className="image-section" ref={canvasRef} onMouseDown={drawing} />
-
-      <div className="tag-list-section" />
+      <p>준비중</p>
     </TagPageContainer>
   );
 }
@@ -30,8 +27,8 @@ const TagPageContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  border: 10px solid black;
 
   .image-section {
     border: 1px solid red;
