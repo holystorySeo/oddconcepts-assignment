@@ -16,9 +16,5 @@ const SearchCodeURLResultPageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px solid blue;
-
-  @media screen and (max-width: 746px) {
-    width: 300px;
-  }
+  /* border: 2px solid blue; */
 `;

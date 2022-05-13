@@ -204,6 +204,23 @@ const productSlice = createSlice({
     isShowTotalPage: false, // totalPage 보여줄지 말지
   },
   reducers: {
+    initializeState(state, action) {
+      state.inputValue = '';
+      state.productList = [];
+      state.leftsideList = [];
+      state.loading = false;
+      state.error = '';
+      state.pageNumbers = [];
+      state.pageComponent = 'first';
+      state.currentPage = 1;
+      state.postLimit = 28;
+      state.totalPage = '';
+      state.searchStuff = '';
+      state.isShowFirstDot = false;
+      state.isShowEndDot = false;
+      state.isShowNumberOne = false;
+      state.isShowTotalPage = false;
+    },
     inputChange(state, action) {
       state.inputValue = action.payload;
     },
@@ -305,6 +322,7 @@ const productSlice = createSlice({
 });
 
 export const {
+  initializeState,
   inputChange,
   changeCurrentPage,
   changePostLimit,

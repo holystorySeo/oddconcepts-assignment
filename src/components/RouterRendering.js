@@ -85,6 +85,11 @@ const RenderingContainer = styled.div`
   justify-content: center;
   /* border: 1px solid red; */
 
+  @media screen and (max-width: 659px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .postlist-pagination {
     /* border: 1px solid black; */
   }

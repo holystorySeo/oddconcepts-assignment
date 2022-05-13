@@ -37,40 +37,41 @@ export default function PostListforCodeURL() {
 }
 
 const PostListforCodeURLContainer = styled.div`
-  min-width: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
   height: auto;
   margin-top: 1rem;
+  /* border: 1px solid blue; */
 
   .post-list {
     width: 90%;
     height: 100%;
+    /* border: 5px solid red; */
 
-    @media screen and (min-width: 1566px) {
-      width: 1232px; // 한줄에 7개 4줄 28개
+    @media screen and (min-width: 1590px) {
+      width: 1247px; // 한줄에 7개 4줄 28개
     }
-    @media screen and (min-width: 1345px) and (max-width: 1565px) {
-      width: 1058px; // 한줄에 6개 4줄 24개
+    @media screen and (min-width: 1415px) and (max-width: 1589px) {
+      width: 1070px; // 한줄에 6개 4줄 24개
     }
-    @media screen and (min-width: 1200px) and (max-width: 1344px) {
-      width: 880px; // 한줄에 5개 4줄 20개
+    @media screen and (min-width: 1240px) and (max-width: 1414px) {
+      width: 890px; // 한줄에 5개 4줄 20개
     }
-    @media screen and (min-width: 1038px) and (max-width: 1199px) {
-      width: 705px; // 한줄에 4개 4줄 16개
+    @media screen and (min-width: 1063px) and (max-width: 1239px) {
+      width: 713px; // 한줄에 4개 4줄 16개
     }
-    @media screen and (min-width: 866px) and (max-width: 1037px) {
-      width: 530px; // 한줄에 3개 4줄 12개
+    @media screen and (min-width: 885px) and (max-width: 1062px) {
+      width: 535px; // 한줄에 3개 4줄 12개
     }
-    @media screen and (min-width: 790px) and (max-width: 865px) {
-      width: 355px; // 한줄에 2개 4줄 8개
+    @media screen and (min-width: 710px) and (max-width: 884px) {
+      width: 356px; // 한줄에 2개 4줄 4개
     }
-    @media screen and (min-width: 747px) and (max-width: 789px) {
-      width: 355px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @media screen and (min-width: 660px) and (max-width: 709px) {
+      width: 317px;
+    }
+    @media screen and (max-width: 659px) {
+      width: 317px;
     }
   }
 
@@ -81,6 +82,12 @@ const PostListforCodeURLContainer = styled.div`
     border: 1px solid #bdbdbd;
     border-radius: 5px;
     margin: 0.5rem;
+
+    @media screen and (max-width: 709px) {
+      width: 299px;
+      height: 600px;
+      margin: 0.5rem 0 1rem 0.5rem;
+    }
   }
 
   .post-image {
@@ -92,7 +99,8 @@ const PostListforCodeURLContainer = styled.div`
     cursor: pointer;
 
     img {
-      border-radius: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       width: 100%;
       height: auto;
       object-fit: cover;

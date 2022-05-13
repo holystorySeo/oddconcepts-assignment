@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import logoPxl from '../assets/logo_pxl_b.png';
+import { initializeState } from '../store/productSlice';
 
 export default function Nav() {
+  const dispatch = useDispatch();
   const [selectedTab, setSelectedTab] = useState(0);
 
   const tabHandler = (idx) => {
@@ -14,7 +17,13 @@ export default function Nav() {
     <NavContainer>
       <span id="title">
         <Link to="/">
-          <img id="logo" src={logoPxl} alt="logo" />
+          <img
+            role="presentation"
+            id="logo"
+            src={logoPxl}
+            alt="logo"
+            onClick={() => dispatch(initializeState())}
+          />
         </Link>
       </span>
       <div id="menu">
