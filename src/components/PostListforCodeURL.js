@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
-import Pagination from './Pagination';
 import LoadingPage from '../pages/LoadingPage';
 import NotResultPage from '../pages/NoResultPage';
 

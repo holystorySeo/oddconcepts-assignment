@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Rendering from '../components/Rendering';
+import RouterRendering from '../components/RouterRendering';
 
 export default function SearchKeywordResultPage() {
   return (
     <SearchKeywordResultPageContainer>
-      <Rendering />
+      <RouterRendering />
     </SearchKeywordResultPageContainer>
   );
 }

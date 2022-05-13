@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux';
 import PostList from './PostList';
 import PostListforCodeURL from './PostListforCodeURL';
 import LeftSideBar from './LeftSideBar';
-import Pagination from './Pagination';
 import LoadingPage from '../pages/LoadingPage';
 import NoResultPage from '../pages/NoResultPage';
+import PaginationRendering from './PaginationRendering';
 
 // 설명: 전역 저장소 변수 상태에 따른 동적 rendering
 export default function Rendering() {
@@ -40,7 +40,7 @@ export default function Rendering() {
       <RenderingContainer>
         <div className="postlist-pagination">
           <PostList />
-          <Pagination />
+          <PaginationRendering />
         </div>
       </RenderingContainer>
     );
@@ -57,7 +57,7 @@ export default function Rendering() {
         <LeftSideBar />
         <div className="postlist-pagination">
           <PostListforCodeURL />
-          <Pagination />
+          <PaginationRendering />
         </div>
       </RenderingContainer>
     );
@@ -84,4 +84,8 @@ const RenderingContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   /* border: 1px solid red; */
+
+  .postlist-pagination {
+    /* border: 1px solid black; */
+  }
 `;

@@ -192,9 +192,16 @@ const productSlice = createSlice({
     leftsideList: [], // 좌측사이드 이미지 정보
     loading: false,
     error: '',
+    pageNumbers: [],
+    pageComponent: 'first', // first, mid, last
     currentPage: 1, // 현재 페이지
     postLimit: 28, // 페이지당 게시물 수
+    totalPage: '',
     searchStuff: '', // keyword이면 true, 아니면 false
+    isShowFirstDot: false, // 시작 ... 보여줄지 말지
+    isShowEndDot: false, // 끝에 ... 보여줄지 말지
+    isShowNumberOne: false, // 숫자 1을 보여줄지 말지
+    isShowTotalPage: false, // totalPage 보여줄지 말지
   },
   reducers: {
     inputChange(state, action) {
@@ -214,6 +221,28 @@ const productSlice = createSlice({
     },
     setPostLimit(state, action) {
       state.searchStuff = action.payload;
+    },
+    setTotalPage(state, action) {
+      state.totalPage = action.payload;
+    },
+    setPageNumbers(state, action) {
+      state.pageNumbers = action.payload;
+    },
+    setPageComponent(state, action) {
+      state.pageComponent = action.payload;
+    },
+    setIsShowFirstDot(state, action) {
+      state.isShowFirstDot = action.payload;
+    },
+    setIsShowEndDot(state, action) {
+      // firstArrayButton에서 EndDot
+      state.isShowEndDot = action.payload;
+    },
+    setIsShowNumberOne(state, action) {
+      state.isShowNumberOne = action.payload;
+    },
+    setIsShowTotalPage(state, action) {
+      state.isShowTotalPage = action.payload;
     },
   },
 
@@ -281,5 +310,12 @@ export const {
   changePostLimit,
   setSearchStuff,
   setPostLimit,
+  setTotalPage,
+  setPageNumbers,
+  setPageComponent,
+  setIsShowFirstDot,
+  setIsShowEndDot,
+  setIsShowNumberOne,
+  setIsShowTotalPage,
 } = productSlice.actions;
 export default productSlice.reducer;
