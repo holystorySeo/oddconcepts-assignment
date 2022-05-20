@@ -14,11 +14,11 @@ export default function App() {
       <WholeContainer>
         <Nav />
         <Routes>
-          <Route path="/" element={SearchPage()} />
-          <Route path="/tagging" element={TagPage()} />
-          <Route path="/search/keyword" element={SearchKeywordResultPage()} />
-          <Route path="/search/code" element={SearchCodeURLResultPage()} />
-          <Route path="/search/url" element={SearchCodeURLResultPage()} />
+          <Route path="/" element={<SearchPage />} />
+          <Route path="/tagging" element={<TagPage />} />
+          <Route path="/search/keyword" element={<SearchKeywordResultPage />} />
+          <Route path="/search/code" element={<SearchCodeURLResultPage />} />
+          <Route path="/search/url" element={<SearchCodeURLResultPage />} />
         </Routes>
       </WholeContainer>
     </BrowserRouter>
@@ -27,7 +27,7 @@ export default function App() {
 
 const WholeContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,5 +36,5 @@ const WholeContainer = styled.div`
   font-size: 16px;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
