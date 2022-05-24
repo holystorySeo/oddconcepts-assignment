@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import SearchBar from '../components/Search/SearchBar';
-import SearchBtn from '../components/Search/SearchButton';
+import SearchBtn from '../components/Search/SearchBtn';
 
 export default function SearchPage() {
   return (
     <WholeContainer>
-      <div className="search-text" />
+      <div className="search-text">
+        <div className="text-ahead">Artificial Intelligence</div>
+        <div className="text-end">
+          <span className="text-end-first">PXL</span>
+          <span className="text-end-mid">Fashion</span>
+          <span className="text-end-last">Viewer</span>
+        </div>
+      </div>
       <div className="search-section">
         <SearchBar />
         <SearchBtn />
@@ -16,34 +23,43 @@ export default function SearchPage() {
 }
 
 const WholeContainer = styled.div`
-  width: 120%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-top: -10%;
 
   .search-text {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 2.125rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 90px;
 
-    ::before {
-      content: 'Artificial Intelligence';
+    .text-ahead {
+      color: #424242;
+      margin-bottom: 0.5rem;
     }
-    ::after {
-      content: 'PXL Fashion Viewer';
+
+    .text-end-mid {
+      color: #424242;
+      margin: 0 0.5rem;
+    }
+
+    .text-end-first,
+    .text-end-last {
+      font-family: 'Roboto Flex';
+      color: #848484;
     }
   }
 
   .search-section {
     width: 35%;
     min-width: 300px;
-    height: 65px;
+    height: 45px;
     border-radius: 42px;
     background-color: #ffffff;
     display: flex;

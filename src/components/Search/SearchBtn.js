@@ -46,6 +46,7 @@ export default function SearchBtn() {
 }
 
 const WholeContainer = styled.button`
+  height: 45px;
   border-width: 0;
   border-top-right-radius: 42px;
   border-bottom-right-radius: 42px;
@@ -54,11 +55,8 @@ const WholeContainer = styled.button`
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -0.018em;
-  line-height: 1.6;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 18px;
-  padding-bottom: 18px;
   cursor: color: ${(props) => (props.disabled ? 'none' : 'pointer')};
 
   -webkit-font-smoothing: antialiased;

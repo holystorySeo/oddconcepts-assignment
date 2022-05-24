@@ -31,10 +31,4 @@ const WholeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid red; */
 `;
